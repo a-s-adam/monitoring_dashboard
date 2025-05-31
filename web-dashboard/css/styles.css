@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.anomaly-alert {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { background-color: #f8d7da; }
+    50% { background-color: #f5c6cb; }
+    100% { background-color: #f8d7da; }
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.progress {
+    height: 25px;
+}
+
+.system-info {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.chart-container {
+    position: relative; 
+    height: 250px;
+}
+
+#refresh-badge {
+    transition: opacity 0.3s;
+} 

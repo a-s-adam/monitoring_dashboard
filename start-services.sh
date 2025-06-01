@@ -2,7 +2,7 @@
 
 # Function to check if a port is in use
 check_port() {
-    if lsof -i :$1 > /dev/null; then
+    if netstat -an | grep ":$1 " | grep "LISTEN" > /dev/null; then
         return 0
     else
         return 1

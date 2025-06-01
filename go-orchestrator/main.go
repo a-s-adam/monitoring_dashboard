@@ -14,7 +14,7 @@ import (
 const (
 	rustMetricsURL   = "http://localhost:8000/metrics"
 	pythonAnomalyURL = "http://localhost:8001/detect"
-	maxHistorySize   = 20 // Store more history points for better analysis
+	maxHistorySize   = 20 // Maximum number of historical data points to store.
 	port             = "8002"
 )
 

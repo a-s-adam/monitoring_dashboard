@@ -146,7 +146,7 @@ async fn main() -> std::io::Result<()> {
     println!("Rust hardware metrics service starting on :8000");
     
     HttpServer::new(move || {
-        let cors = Cors::permissive(); // For development - tighten this in production
+        let cors = Cors::permissive(); // Allows all origins, for ease of local development and inter-service communication.
         
         App::new()
             .app_data(web::Data::new(state.clone()))

@@ -36,10 +36,6 @@ yarn-error.log*
 # Rust
 target/
 Cargo.lock
-# Ignoring Cargo.lock is often debated. If you want to ensure reproducible builds across environments,
-# you might want to commit it. For library development, it's usually ignored.
-# For an application, you might want to commit it. I'll ignore it for now.
-# Remove the line above if you want to commit Cargo.lock.
 
 # Go
 *.exe
@@ -50,9 +46,6 @@ Cargo.lock
 *.test
 *.out
 vendor/
-# Similar to Cargo.lock, the 'vendor/' directory can be committed or ignored.
-# Ignoring it means `go mod download` will be needed.
-# I'll ignore it for now.
 
 # IDE specific
 .idea/
